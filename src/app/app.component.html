@@ -1,0 +1,21 @@
+<main id="main">
+  <button (click)="showHide()" *ngIf="!hidden" class="show-hide">Hide Instructions</button>
+  <button (click)="showHide()" *ngIf="hidden" class="show-hide">Show Instructions</button>
+  <div id="color-hidden-menu" (click)="newColor()">
+      <span>Current color:   </span>
+  </div>
+  <button (click)="toggleMute()" *ngIf="!muted" class="mute-button">Mute</button>
+  <button (click)="toggleMute()" *ngIf="muted" class="mute-button">Unmute</button>
+  <button (click)="deleteAll()" id="delete">Delete</button>
+  <div id="center-block">
+      <h1>Musical Constellations</h1>
+      <p>Click on a series of stars to draw a constellation. 
+          <br> Double click to disconnect from current constellation.
+          <br> Press the space bar or click on the color swatch to change colors.
+      </p>
+          <div class="current-color" (click)="newColor()">
+              <span>Current color:   </span>
+          </div>
+  </div>
+  
+</main>

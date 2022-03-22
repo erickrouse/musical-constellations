@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle infinite alternate;
+    outline: 1px solid #ffffff00;
+    transition-property: background, outline;
+    transition-duration: 30s, 1s;
+    box-sizing: content-box;
+  }
+
+.star:hover {
+    outline: 1px solid #FFF;
+    transition: 1s;
+}
+
+.fade-in {
+    background: rgba(255, 255, 255, 0);
+}
